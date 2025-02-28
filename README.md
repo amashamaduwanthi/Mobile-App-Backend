@@ -1,67 +1,59 @@
-# Green Shadow - Crop Management System
+# Cake Store Mobile Application
 
 ## Overview
-Green Shadow is an advanced **Crop Management System** designed to simplify and enhance farm operations. It allows farmers and administrators to manage crops, vehicles, equipment, fields, staff, and monitoring logs efficiently. The system provides seamless functionalities to add, update, delete, and retrieve essential farm data.
+The Cake Store Mobile App is an intuitive platform designed for customers to browse, order, and manage their favorite cakes effortlessly. Built with React Native and TypeScript, the app offers a seamless shopping experience, featuring secure authentication, order tracking, and an interactive UI for both Android  users. The backend, developed using Node.js and Express, ensures efficient order processing and data management with MySQL and Prisma ORM.
 
 ## Features
-✅ **Crop Management** – Create, modify, and track different crop types.
-✅ **Field Management** – Maintain farm field records, including size, location, and usage.
-✅ **Equipment Management** – Manage farming tools and machinery details.
-✅ **Vehicle Management** – Oversee farm vehicles, including maintenance schedules.
-✅ **Staff Management** – Store staff details and assign responsibilities.
-✅ **Monitoring Logs** – Keep track of crop health, equipment usage, and farm activities.
-✅ **User Authentication** – Secure role-based access control.
+- **User Authentication**: Secure login and sign-up using JWT authentication.
+- **Cake Catalog**: Browse a variety of cakes with images, descriptions, and prices.
+- **Order Management**: Add cakes to the cart, place orders, and track order status.
+- **Customer Profile**: Manage personal details like name, address, and contact number.
+- **Cart Functionality**: Add,  remove items before checkout.
+- **Responsive UI**: Optimized for Android devices.
+- **Backend API**: Built with Node.js, Express, and Prisma ORM for seamless data handling.
 
----
-
-## Technology Stack
-### 🖥️ Frontend
-- React (TypeScript)
-- Tailwind CSS
-
-### 🖥️ Backend
-- Node.js with Express.js (TypeScript)
-
-### 🗄️ Database
-- MySQL (Relational Database)
-- Prisma (ORM for database management)
-
----
+## Tech Stack
+- **Frontend**: React Native, TypeScript, Redux for state management
+- **Backend**: Node.js, Express, Prisma ORM
+- **Database**: MySQL
+- **Authentication**: JWT (JSON Web Token)
 
 
----
+## Installation
+### Prerequisites
+- Install Node.js (LTS version) along with npm or Yarn.
+- Install Expo CLI globally for React Native development.
+- MySQL server setup for database management.
 
-## Installation Guide
-### ⚙️ Prerequisites
-Ensure the following are installed:
-- Java 21+
-- Node.js (For frontend development)
-- MySQL Server
-- Postman (For API Testing - Optional)
+### Clone the Repository
+#### Frontend:
+```
+git clone https://github.com/amashamaduwanthi/Cake-Store-front-End-Mobile-Application.git
 
-### 🚀 Backend Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/amashamaduwanthi/Green-Shadow-Backend-Express.git
+```
+#### Backend:
+```
+git clone https://github.com/amashamaduwanthi/Mobile-App-Backend.git
+
+```
+
+### Running the Application
+#### Backend:
+1. Configure your MySQL database in the `.env` file.
+2. Run database migrations with Prisma:
    ```
-
+   npx prisma migrate dev
    ```
-2. Start the server:
-   ```bash
+3. Start the backend server:
+   ```
    npm start
    ```
 
-### 🌐 Frontend Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/amashamaduwanthi/Green-Shadow-React.git
+#### Frontend:
+1. Start the Expo development server:
    ```
-2. Start the application:
-   ```bash
-   npm run dev
+   npm expo start
    ```
-
----
-
+2. Use an Android simulator or Expo Go to preview the app.
 
 
